@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .dialog{
+            border: 1px transparent;
+            box-shadow: 1px 2px 4px rgba(0, 128, 128, 0.379);
+            padding: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+    <main>
+        <button onclick="popup.showModal()">open modal</button>
+        <section id="top">
+            <dialog id="popup" class="dialog">
+                <button onclick="popup.close()" title="close modal" style="cursor: pointer;">&times;</button>
+                <a href="#top" title="click to open modal"><h1>click me</h1></a>
+                <img src="./1.jpg" alt="image" style="aspect-ratio: 1; width: 200px; border-radius: 5px;">
+            </dialog>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
